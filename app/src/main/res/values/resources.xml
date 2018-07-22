@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">BoilerPlate</string>
-	<string name="greeting">Hello, world.</string>
+	<string name="greeting">Hello, %1$s.</string>
+	<string name="question">What is your name?</string>
+	<string name="answer">is my name.</string>
+	<string name="defaultName">world</string>
 
 	<color name="colorPrimary">#3F51B5</color>
 	<color name="colorPrimaryDark">#303F9F</color>
 	<color name="colorAccent">#FF4081</color>
 
+	<dimen name="defaultTextSize">24sp</dimen>
 	<dimen name="defaultPadding">24dp</dimen>
 
 	<!-- Base application theme. -->
-	<style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar.TranslucentDecor">
+	<style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
 	<!-- Customize your theme here. -->
 		<item name="colorPrimary">@color/colorPrimary</item>
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="colorAccent">@color/colorAccent</item>
 	</style>
+
+    <style name="wrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="matchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
 </resources>
 

@@ -1,33 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- The "xmlns:" attribute below is commonly set to "xmlns:android",
+<?xml version="1.0" encoding="utf-8"?><!-- The "xmlns:" attribute below is commonly set to "xmlns:android",
 causing all XML attributes to be referenced like "android:layout_width=..."
 Since typing the word "android:" over and over for every attribute gets tiring,
 we can rename the XML namespace to literally "_" (underscore) so we can refer
 to the all the Android XML attributes like "_:layout_width=..." instead of
 "android:layout_width=..." -->
-<android.widget.LinearLayout
-    xmlns:_="http://schemas.android.com/apk/res/android"
-    _:layout_width="match_parent"
-    _:layout_height="match_parent"
-    _:orientation="vertical"
-    _:gravity="center"
-    >
+<android.widget.LinearLayout xmlns:_="http://schemas.android.com/apk/res/android"
+                             style="@style/matchMatch"
+                             _:gravity="center"
+                             _:orientation="vertical">
 
     <TextView
-        _:layout_width="wrap_content"
-        _:layout_height="wrap_content"
-        _:layout_gravity="right"
-        _:textSize="24sp"
-        _:paddingTop="@dimen/defaultPadding"
-        _:paddingRight="@dimen/defaultPadding"
-        _:text="@string/greeting"
-        />
+            _:id="@+id/greeting"
+            style="@style/wrapWrap"
+            _:layout_gravity="right"
+            _:paddingRight="@dimen/defaultPadding"
+            _:paddingTop="@dimen/defaultPadding"
+            _:text="@string/greeting"
+            _:textSize="24sp"/>
 
     <ImageView
-        _:layout_width="match_parent"
-        _:layout_height="match_parent"
-        _:padding="@dimen/defaultPadding"
-        _:src="@drawable/awesome"
-        />
+            style="@style/matchMatch"
+            _:layout_height="394dp"
+            _:padding="@dimen/defaultPadding"
+            _:src="@drawable/awesome"/>
+
+
+    <RelativeLayout
+            _:layout_width="match_parent"
+            _:layout_height="89dp">
+
+        <TextView
+                style="@style/wrapWrap"
+                _:layout_alignParentTop="true"
+                _:layout_alignLeft="@+id/nameInput"
+                _:text="@string/question"
+                _:textSize="@dimen/defaultTextSize"/>
+
+        <EditText
+                _:id="@+id/nameInput"
+                _:layout_width="200dp"
+                _:layout_height="wrap_content"
+                _:layout_alignParentBottom="true"
+                _:layout_marginLeft="@dimen/defaultPadding"
+                _:layout_toLeftOf="@+id/submitButton"
+                _:textAlignment="textEnd"
+                _:textColor="@android:color/black"
+                _:textSize="@dimen/defaultTextSize"/>
+
+        <Button
+                _:id="@+id/submitButton"
+                style="@style/wrapWrap"
+                _:layout_alignParentBottom="true"
+                _:layout_alignParentRight="true"
+                _:layout_marginRight="@dimen/defaultPadding"
+                _:gravity="end"
+                _:text="@string/answer"
+                _:textAllCaps="false"
+                _:textSize="@dimen/defaultTextSize"/>
+    </RelativeLayout>
 
 </android.widget.LinearLayout>

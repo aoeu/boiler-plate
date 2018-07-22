@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The "xmlns:" attribute below is commonly set to "xmlns:android",
+causing all XML attributes to be referenced like "android:layout_width=..."
+Since typing the word "android:" over and over for every attribute gets tiring,
+we can rename the XML namespace to literally "_" (underscore) so we can refer
+to the all the Android XML attributes like "_:layout_width=..." instead of
+"android:layout_width=..." -->
+<android.widget.LinearLayout
+    xmlns:_="http://schemas.android.com/apk/res/android"
+    _:layout_width="match_parent"
+    _:layout_height="match_parent"
+    _:orientation="vertical"
+    _:gravity="center"
+    >
+
+    <TextView
+        _:layout_width="wrap_content"
+        _:layout_height="wrap_content"
+        _:layout_gravity="right"
+        _:textSize="24sp"
+        _:paddingTop="24dp"
+        _:paddingRight="24dp"
+        _:text="@string/greeting"
+        />
+
+    <ImageView
+        _:layout_width="match_parent"
+        _:layout_height="match_parent"
+        _:src="@drawable/awesome"
+        />
+
+</android.widget.LinearLayout>

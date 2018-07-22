@@ -18,14 +18,15 @@ to the all the Android XML attributes like "_:layout_width=..." instead of
         _:layout_height="wrap_content"
         _:layout_gravity="right"
         _:textSize="24sp"
-        _:paddingTop="24dp"
-        _:paddingRight="24dp"
+        _:paddingTop="@dimen/defaultPadding"
+        _:paddingRight="@dimen/defaultPadding"
         _:text="@string/greeting"
         />
 
     <ImageView
         _:layout_width="match_parent"
         _:layout_height="match_parent"
+        _:padding="@dimen/defaultPadding"
         _:src="@drawable/awesome"
         />
 

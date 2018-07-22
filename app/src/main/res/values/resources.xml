@@ -7,6 +7,8 @@
 	<color name="colorPrimaryDark">#303F9F</color>
 	<color name="colorAccent">#FF4081</color>
 
+	<dimen name="defaultPadding">24dp</dimen>
+
 	<!-- Base application theme. -->
 	<style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar.TranslucentDecor">
 	<!-- Customize your theme here. -->
